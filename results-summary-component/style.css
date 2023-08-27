@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Hanken Grotesk"; /* Variable */
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+html {
+  font-size: 100%;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#result {
+  background: 
+    linear-gradient(
+      hsl(252, 100%, 67%), 
+      hsl(241, 81%, 54%));
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+#result h2 {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+}
+
+/* SCORE */
+#result p:nth-of-type(1) {
+  background: 
+    linear-gradient(
+      hsla(256, 72%, 46%, 1), 
+      hsla(241, 72%, 46%, 0));
+  margin: 2rem auto 0 auto;
+  padding: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  /* If line-height is equal to height,
+  the <span> with the text in it is placed in the middle.*/
+}
+
+.result.score {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  /* To set back the line-height to normal,
+  <span> must be an inline-block element.
+  Vertical-align: middle is also needed for the perfect alignment. */
+}
+
+.result.user-score {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#result p:nth-of-type(2) {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+#result p:last-of-type {
+  margin: 1rem 0 2rem;
+  padding: 0 22vw;
+  line-height: 1.4rem;
+}
+
+#result h2,
+#result p:nth-of-type(1),
+#result p:last-of-type {
+  color: hsl(241, 100%, 89%);
+}
+
+.result.user-score,
+#result p:nth-of-type(2) {
+  color: hsl(0, 0%, 100%);
+}
+
+#summary {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#summary h2 {
+  margin: 2rem 1.5rem 0 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+#summary table {
+  width: calc(100% - 3rem);
+  margin: 0.7rem 1.5rem 0 1.5rem;
+  border-collapse: separate;
+  border-spacing: 0 0.8rem;
+}
+
+th { 
+  text-align: left; 
+  padding: 0.8rem 0 0.8rem 0.8rem;
+  border-radius: 10px 0 0 10px;
+}
+
+td {
+  color: hsla(0, 0%, 0%, .5);
+  text-align: right;
+  padding: 0.8rem 0.8rem 0.8rem 0;
+  border-radius: 0 10px 10px 0;
+}
+
+img {
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.sum.user-points {
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+}
+
+tr:nth-of-type(1) {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+tr:nth-of-type(2) {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+tr:nth-of-type(3) {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+
+tr:nth-of-type(4) {
+  background: hsl(221, 100%, 96%);
+}
+
+tr:nth-of-type(1) th {
+  color: hsl(0, 100%, 67%);
+}
+
+tr:nth-of-type(2) th {
+  color: hsl(39, 100%, 56%);
+}
+
+tr:nth-of-type(3) th {
+  color: hsl(166, 100%, 37%);
+}
+
+tr:nth-of-type(4) th {
+  color: hsl(234, 85%, 45%);
+}
+
+#summary button {
+  width: calc(100% - 3rem);
+  margin: 1.2rem 1.5rem 2rem 1.5rem;
+  padding: 0.7rem 0;
+  border-radius: 20px;
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+
+  border: 2px solid transparent;
+  /* The focused button has a border,
+  but box-sizing: border-box isn't working
+  with just padding and no specified height.
+  So here I need a transparent border
+  in order to keep them in the same size. */
+}
+
+#summary button:hover {
+  background: 
+    linear-gradient(
+      hsl(252, 100%, 67%), 
+      hsl(241, 81%, 54%));
+  border-top-color: hsl(252, 100%, 67%);
+  border-bottom-color: hsl(241, 81%, 54%);
+}
+
+#summary button:active {
+  background: 
+    linear-gradient(
+      hsla(252, 100%, 67%, .8), 
+      hsla(241, 81%, 54%, .8));
+  border: 2px solid white;
+}
+
+/* Only for keyboard navigation */
+#summary button:focus-visible {
+  outline: 2px solid hsl(224, 30%, 27%);
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+#attribution {
+  margin: 0 0 2rem 0;
+  font-size: 80%;
+  color: hsla(0, 0%, 0%, .6);
+  text-align: center;
+  font-style: italic;
+}
+
+#attribution p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  font-style: normal;
+}
+
+@media screen and (min-width: 34.375rem) {
+  body {
+    height: 100vh;
+    display: flex;
+  }
+
+  #container {
+    width: 34.375rem; /* 550px */
+
+    margin: auto;
+    /* Both horizontal and vertical alignment.
+    Body has to be a flex container
+    and as high as the viewport. */
+
+    padding: 0.5rem 0;
+  }
+
+  main {
+    flex-direction: row;
+    border-radius: 20px;
+    box-shadow: 
+      10px 25px 30px hsla(241, 72%, 46%, .1);
+  }
+
+  #result,
+  #summary {
+    width: 50%;
+    border-radius: 20px;
+  }
+
+  #result p:last-of-type {
+    padding: 0 2rem;
+  }
+
+  #attribution {
+    margin: 2rem 0 0 0;
+  }
+}
