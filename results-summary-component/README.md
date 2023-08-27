@@ -68,3 +68,6 @@ The idea to use a transparent border around it when it is not in the focused sta
 - [Style a button only for keyboard navigation](https://css-tricks.com/keyboard-only-focus-styles/) *(CSS Tricks)*
 
 ## Author
+
+- CodePen - [Anna](https://codepen.io/annafkt)
+- Frontend Mentor - [@annafkt](https://www.frontendmentor.io/profile/annafkt)
