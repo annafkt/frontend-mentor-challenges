@@ -70,4 +70,3 @@ The idea to use a transparent border around it when it is not in the focused sta
 ## Author
 
 - CodePen - [@annafkt](https://codepen.io/annafkt)
-- Frontend Mentor - [@annafkt](https://www.frontendmentor.io/profile/annafkt)
