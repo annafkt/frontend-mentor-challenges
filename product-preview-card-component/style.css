@@ -1,0 +1,34 @@
+#container {
+  width: 92vw;
+  margin: 1rem auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+}
+
+@media screen and (min-width: 37.5rem) {
+  body {
+    height: 100vh;
+    display: flex;
+  }
+
+  #container {
+    width: 37.5rem; /* 600px */
+    margin: auto;
+  }
+
+  section {
+    flex-direction: row;
+  }
+
+  picture,
+  .product {
+    width: 50%;
+  }
+}
