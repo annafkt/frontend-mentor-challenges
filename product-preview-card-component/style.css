@@ -28,7 +28,7 @@ img {
 .product p:first-of-type {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.5em;
 }
 
 .product h2 {
