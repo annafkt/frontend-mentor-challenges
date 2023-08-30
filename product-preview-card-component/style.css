@@ -3,6 +3,7 @@
 html {
   font-family: Montserrat, sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
 }
 
 body {
@@ -11,17 +12,23 @@ body {
 
 #container {
   width: 92vw;
-  color: hsl(228, 12%, 48%);
+  margin: 5vw auto;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  background: hsl(0, 0%, 100%);
 }
 
 .product-image {
   display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.product {
+  background: hsl(0, 0%, 100%);
+  border-radius: 0 0 10px 10px;
+  padding: 22px 25px;
 }
 
 .product p:first-of-type {
@@ -32,22 +39,29 @@ section {
 
 .product h2 {
   font-family: Fraunces, serif;
-  font-size: 25px;
+  font-size: 30px;
   color: hsl(212, 21%, 14%);
+  margin: 16px 0;
 }
 
 .product p:nth-of-type(2) {
   line-height: 1.5rem;
 }
 
+.product p:nth-of-type(3) {
+  margin: 22px 0;
+}
+
 .discounted-price {
   font-family: Fraunces, serif;
-  font-size: 24px;
+  font-size: 28px;
   color: hsl(158, 36%, 37%);
+  padding-right: 0.9em;
 }
 
 .original-price {
   font-size: 13px;
+  vertical-align: super;
 }
 
 button {
@@ -56,7 +70,6 @@ button {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   padding: 1em;
-  border: none;
   border-radius: 7px;
   border: 2px solid transparent;
 }
@@ -84,14 +97,14 @@ button:focus-visible {
   font-size: 12px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 552px) {
   body {
     height: 100vh;
     display: flex;
   }
 
   #container {
-    width: 600px;
+    width: 552px;
     margin: auto;
   }
 
@@ -102,5 +115,22 @@ button:focus-visible {
   picture,
   .product {
     width: 50%;
+  }
+
+  .product-image {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .product {
+    padding: 26px 25px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .product h2 {
+    margin: 22px 0;
+  }
+
+  .product p:nth-of-type(3) {
+    margin: 28px 0;
   }
 }
