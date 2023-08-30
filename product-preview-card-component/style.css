@@ -95,6 +95,9 @@ button:focus-visible {
 
 .attribution {
   font-size: 12px;
+  text-align: center;
+  line-height: 1.5em; 
+  margin-top: 2em;
 }
 
 @media screen and (min-width: 552px) {
