@@ -85,6 +85,7 @@ button:hover {
 
 button:active {
   background: hsla(212, 21%, 14%, .8);
+  border: 2px solid hsl(0, 0%, 100%);
 }
 
 /* Only for keyboard navigation */
