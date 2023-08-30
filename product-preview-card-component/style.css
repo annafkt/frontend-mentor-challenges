@@ -127,16 +127,11 @@ button:focus-visible {
   }
 
   .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 26px 25px;
     border-radius: 0 10px 10px 0;
-  }
-
-  .product h2 {
-    margin: 22px 0;
-  }
-
-  .product p:nth-of-type(3) {
-    margin: 28px 0;
   }
 
   .attribution {
