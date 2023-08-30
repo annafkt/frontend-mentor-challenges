@@ -11,7 +11,6 @@ body {
 
 #container {
   width: 92vw;
-  margin: 5% auto;
   color: hsl(228, 12%, 48%);
 }
 
@@ -21,7 +20,7 @@ section {
   background: hsl(0, 0%, 100%);
 }
 
-img {
+.product-image {
   display: block;
 }
 
@@ -52,9 +51,33 @@ img {
 }
 
 button {
+  width: 100%;
   background: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  padding: 1em;
+  border: none;
+  border-radius: 7px;
+  border: 2px solid transparent;
+}
+
+.cart-icon {
+  vertical-align: sub; /* Lower the baseline */
+  padding-right: 0.7em;
+}
+
+button:hover {
+  background:hsl(212, 21%, 14%);
+}
+
+button:active {
+  background: hsla(212, 21%, 14%, .8);
+}
+
+/* Only for keyboard navigation */
+button:focus-visible {
+  outline: 2px solid hsl(212, 21%, 14%);
+  border: 2px solid hsl(0, 0%, 100%);
 }
 
 .attribution {
