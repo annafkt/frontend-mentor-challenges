@@ -114,6 +114,7 @@ button:focus-visible {
 
   section {
     flex-direction: row;
+    margin-top: 0.5rem;
   }
 
   picture,
@@ -136,5 +137,9 @@ button:focus-visible {
 
   .product p:nth-of-type(3) {
     margin: 28px 0;
+  }
+
+  .attribution {
+    margin-bottom: 0.5rem;
   }
 }
