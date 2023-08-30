@@ -34,9 +34,17 @@ Users should be able to:
 
 ## Problems and solutions
 
-There was a little gap under the image, as if it had not filled its container properly.
+#### <ins>A gap under the image</ins>
+
+There was a little gap under the image, as if it had not filled its container properly.<br>
 The solution was to display it as a block element.
 [Stackoverflow](https://stackoverflow.com/questions/10266849/image-will-not-fill-div)
+
+#### <ins>Equal space between elements</ins>
+
+I played around a lot with the vertical alignment of the text until I remembered that with flexbox it is possible to add equal space between the flex items.
+
+[justify-content: space-between](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) *(MDN Web Docs)*
 
 ## Author
 
