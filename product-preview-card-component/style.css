@@ -17,7 +17,7 @@ body {
   margin: auto;
 }
 
-section {
+article {
   display: flex;
   flex-direction: column;
   margin-top: 5vw;
@@ -110,7 +110,7 @@ button:focus-visible {
     margin: auto;
   }
 
-  section {
+  article {
     flex-direction: row;
     margin-top: 0.5rem;
   }
