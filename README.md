@@ -5,3 +5,4 @@ These are my solutions to the challenges of [Frontend Mentor](https://www.fronte
 | Challenges | Difficulty | Technologies |
 |   :---:    |   :---:    |    :---:     |
 | [Results Summary Component](https://github.com/annafkt/frontend-mentor-challenges/tree/master/results-summary-component) | Newbie | HTML, CSS |
+| [Product Preview Card Component](https://github.com/annafkt/frontend-mentor-challenges/tree/master/product-preview-card-component) | Newbie | HTML, CSS
