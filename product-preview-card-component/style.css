@@ -7,17 +7,20 @@ html {
 }
 
 body {
+  height: 100vh;
+  display: flex;
   background: hsl(30, 38%, 92%);
 }
 
 #container {
   width: 85vw;
-  margin: 5vw auto;
+  margin: auto;
 }
 
 section {
   display: flex;
   flex-direction: column;
+  margin-top: 5vw;
 }
 
 .product-image {
@@ -98,15 +101,10 @@ button:focus-visible {
   font-size: 12px;
   text-align: center;
   line-height: 1.5em; 
-  margin-top: 2em;
+  margin: 2em 0 5vw 0;
 }
 
 @media screen and (min-width: 572px) {
-  body {
-    height: 100vh;
-    display: flex;
-  }
-
   #container {
     width: 572px;
     margin: auto;
