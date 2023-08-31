@@ -46,6 +46,16 @@ I played around a lot with the vertical alignment of the text until I remembered
 
 [justify-content: space-between](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) *(MDN Web Docs)*
 
+#### <ins>Article or section</ins>
+This article is very useful to decide which HTML element I should choose for a component.
+[Article and section elements](https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/) *(Smashing Magazine)*
+
+#### <ins>Incorrect values in the image size</ins>
+
+I checked my HTML code with a validator and it turned out that I shouldn't have used percentage when I set the image's width, nor the auto value for the height. They need an explicit unit I assume. I know it's important to set the size of an image in the HTML, but then I have troubles to keep the layout responsive.
+
+I will continue to experiment with this problem in future challenges.
+
 ## Author
 
 - CodePen - [annafkt](https://codepen.io/annafkt)
