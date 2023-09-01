@@ -26,6 +26,8 @@ article {
 .product-image {
   display: block;
   border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
 }
 
 .product {
@@ -121,6 +123,7 @@ button:focus-visible {
   }
 
   .product-image {
+    width: 276px;
     margin-left: 10px;
     border-radius: 10px 0 0 10px;
   }

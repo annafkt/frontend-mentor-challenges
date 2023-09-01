@@ -58,6 +58,8 @@ I will continue to experiment with this problem in future challenges.
 
 (Furthermore, the alt attribute is not allowed on the source element.)
 
+UPDATE: I've set the size in pixel and then resized it with CSS.
+
 ## Author
 
 - CodePen - [annafkt](https://codepen.io/annafkt)
