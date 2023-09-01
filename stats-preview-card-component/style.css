@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   display: grid;
+  background: hsl(233, 47%, 7%)
 }
 
 .container {
@@ -15,17 +16,46 @@ section {
   flex-direction: row-reverse;
 }
 
+picture {
+  background: hsl(277, 64%, 61%);
+}
+
 img {
   display: block;
   max-width: 25rem;
   width: 100%;
   height: auto;
+  opacity: 50%;
+
 }
 
 .text-container {
   max-width: 25rem;
+  background: hsl(244, 38%, 16%);
+}
+
+h2,
+.numbers {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+li {
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .attribution {
   text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+}
+
+a:hover {
+  color: hsla(0, 0%, 100%, 0.8);
 }
