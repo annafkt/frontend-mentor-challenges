@@ -26,7 +26,6 @@ img {
   width: 100%;
   height: auto;
   opacity: 50%;
-
 }
 
 .text-container {
@@ -37,6 +36,10 @@ img {
 h2,
 .numbers {
   color: hsl(0, 0%, 100%);
+}
+
+h2 > span {
+  color: hsl(277, 64%, 61%);
 }
 
 p {
