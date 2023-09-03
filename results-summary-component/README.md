@@ -40,7 +40,7 @@ Users should be able to:
 I ran into a problem similar to this when I tried to center the container:<br>
 [Flex item overflows at the top](https://stackoverflow.com/questions/33454533/cant-scroll-to-top-of-flex-item-that-is-overflowing-container) *(Stackoverflow)*
 
-The solution was to use auto margins on flex item instead of justify-content and align-items on flex box.
+The solution was to use auto margins on the flex item instead of justify-content and align-items on the flex box.
 
 See also:<br>
 [Flexbox and auto margins](https://css-tricks.com/the-peculiar-magic-of-flexbox-and-auto-margins/) *(CSS Tricks)* <br>
