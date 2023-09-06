@@ -37,7 +37,7 @@ Users should be able to:
 
 #### <ins>Overflowing flex item</ins>
 
-I ran into a problem similar to this when I tried to center the container:<br>
+I ran into a problem similar to this when I was trying to center the container:<br>
 [Flex item overflows at the top](https://stackoverflow.com/questions/33454533/cant-scroll-to-top-of-flex-item-that-is-overflowing-container) *(Stackoverflow)*
 
 The solution was to use auto margins on the flex item instead of justify-content and align-items on the flex box.

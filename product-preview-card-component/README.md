@@ -52,7 +52,7 @@ This article is very useful to decide which HTML element I should choose for a c
 
 #### <ins>Incorrect values in the image size</ins>
 
-I checked my HTML code with a validator and it turned out that I shouldn't have used percentage when I set the image's width, nor the auto value for the height. They need an explicit unit I assume. I know it's important to set the size of an image in the HTML, but then I have troubles to keep the layout responsive.
+After I finished the challenge, I checked my HTML code with a validator and it turned out that I shouldn't have used percentage for the image's width, nor the auto value for the height. They need an explicit unit I assume. I know it's important to set the size of an image in HTML, but then I have trouble keeping the layout responsive.
 
 I will continue to experiment with this problem in future challenges.
 
