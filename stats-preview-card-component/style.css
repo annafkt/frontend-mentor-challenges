@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
 html, body {
   height: 100%;
   display: grid;
-  background: hsl(233, 47%, 7%)
+  background: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
 }
 
 .container {
@@ -34,8 +39,14 @@ img {
 }
 
 h2,
-.numbers {
+.number {
   color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3em;
 }
 
 h2 > span {
@@ -43,14 +54,29 @@ h2 > span {
 }
 
 p {
+  font-size: 0.875rem;
+  line-height: 1.6em;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-li {
+.stat.number {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.stat.number.million {
+  text-transform: uppercase;
+}
+
+.stat.heading {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
   color: hsla(0, 0%, 100%, 0.6);
 }
 
 .attribution {
+  font-size: 0.875rem;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.6);
 }
