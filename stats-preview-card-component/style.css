@@ -27,14 +27,14 @@ picture {
 
 img {
   display: block;
-  max-width: 25rem;
+  max-width: 30rem;
   width: 100%;
   height: auto;
   opacity: 50%;
 }
 
 .text-container {
-  max-width: 25rem;
+  max-width: 30rem;
   background: hsl(244, 38%, 16%);
   text-align: center;
 }
