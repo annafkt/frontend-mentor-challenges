@@ -91,3 +91,14 @@ a {
 a:hover {
   color: hsla(0, 0%, 100%, 0.8);
 }
+
+@media screen and (min-width: 1000px) {
+  .text-container {
+    text-align: left;
+    padding: 60px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
