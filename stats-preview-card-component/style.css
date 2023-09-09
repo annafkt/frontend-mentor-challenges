@@ -37,6 +37,8 @@ img {
   max-width: 30rem;
   background: hsl(244, 38%, 16%);
   text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 h2,
