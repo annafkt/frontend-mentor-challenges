@@ -36,6 +36,7 @@ img {
 .text-container {
   max-width: 25rem;
   background: hsl(244, 38%, 16%);
+  text-align: center;
 }
 
 h2,
@@ -44,7 +45,7 @@ h2,
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 700;
   line-height: 1.3em;
 }
