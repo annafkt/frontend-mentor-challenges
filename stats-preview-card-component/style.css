@@ -63,6 +63,7 @@ p {
   font-size: 0.875rem;
   line-height: 1.6em;
   color: hsla(0, 0%, 100%, 0.75);
+  margin: 15px 0 30px 0;
 }
 
 .stat.number {
@@ -108,5 +109,9 @@ a:hover {
 
   h2 {
     font-size: 2.2rem;
+  }
+
+  p {
+    margin: 30px 0 60px 0;
   }
 }
