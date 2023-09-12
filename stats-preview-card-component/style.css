@@ -5,13 +5,12 @@ html, body {
   display: grid;
   background: hsl(233, 47%, 7%);
   font-family: "Inter", sans-serif;
-  font-size: 100%;
   font-weight: 400;
 }
 
 .container {
   margin: auto;
-  padding: 1.25rem;
+  padding: 20px;
 }
 
 section {
@@ -22,13 +21,13 @@ section {
 }
 
 picture {
-  background: hsl(277, 64%, 61%);
+  background: hsla(277, 64%, 61%, 0.8);
   border-radius: 7px 7px 0 0;
 }
 
 img {
   display: block;
-  max-width: 30rem;
+  max-width: 480px;
   width: 100%;
   height: auto;
   opacity: 50%;
@@ -36,7 +35,7 @@ img {
 }
 
 .text-container {
-  max-width: 30rem;
+  max-width: 480px;
   background: hsl(244, 38%, 16%);
   text-align: center;
   box-sizing: border-box;
@@ -50,9 +49,10 @@ h2,
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 30.4px;
   font-weight: 700;
   line-height: 1.3em;
+  margin-bottom: 20px;
 }
 
 h2 > span {
@@ -60,15 +60,28 @@ h2 > span {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.6em;
   color: hsla(0, 0%, 100%, 0.75);
-  margin: 15px 0 30px 0;
+  padding: 0 2vw;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+li:not(li:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.stat {
+  display: block;
 }
 
 .stat.number {
-  font-size: 1.3rem;
+  font-size: 20.8px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .stat.number.million {
@@ -77,15 +90,14 @@ p {
 
 .stat.heading {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 0.875rem;
+  font-size: 14px;
   text-transform: uppercase;
   color: hsla(0, 0%, 100%, 0.6);
 }
 
 .attribution {
-  font-size: 0.875rem;
   text-align: center;
-  color: hsla(0, 0%, 100%, 0.6);
+  margin-top: 20px;
 }
 
 a {
@@ -96,6 +108,10 @@ a:hover {
   color: hsla(0, 0%, 100%, 0.8);
 }
 
+a:active {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
 @media screen and (min-width: 1000px) {
   picture, img {
     border-radius: 0 7px 7px 0;
@@ -103,15 +119,32 @@ a:hover {
 
   .text-container {
     text-align: left;
-    padding: 60px;
+    padding: 50px;
     border-radius: 7px 0 0 7px;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 35.2px;
+    margin-bottom: 30px;
   }
 
   p {
-    margin: 30px 0 60px 0;
+    padding: 0;
+  }
+
+  .text-container p {
+    padding-right: 15px;
+  }
+  
+  ul {
+    margin-top: 60px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li:not(li:last-of-type) {
+    margin: 0 45px 0 0;
   }
 }
