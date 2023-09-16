@@ -20,8 +20,8 @@ main,
 article {
   display: grid;
   row-gap: 1.9rem;
-  grid-template-rows: 7.8rem auto auto;
-  padding: min(3.1rem, 13vw);
+  grid-template-rows: 7.8rem 1fr auto;
+  padding: 14.5vw;
 }
 
 .sedans {
@@ -109,4 +109,59 @@ a:hover {
 
 a:active {
   color: hsla(179, 100%, 13%, .5);
+}
+
+@media screen and (max-width: 48.93rem) and (min-width: 35.81rem) {
+  .container {
+    width: calc(100vw - 20px);
+  }
+
+  article {
+    grid-template-columns: 1fr 12.5rem 1fr;
+    grid-template-rows: auto;
+    padding: 3.1rem 5vw;
+  }
+
+  .button.box {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+  }
+
+  button {
+    padding: 0.8rem 3vw;
+  }
+}
+
+@media screen and (min-width: 48.94rem) {
+  main {
+    display: grid;
+    max-width: 58.75rem;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  article {
+    padding: 3.1rem;
+  }
+
+  button {
+    margin: 1.9rem 0 0 0;
+  }
+
+  .sedans {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .luxury {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .attribution p:first-of-type::after {
+    content: "|";
+    padding: 0 5px 0 10px;
+  }
+
+  .attribution p {
+    display: inline;
+  }
 }
