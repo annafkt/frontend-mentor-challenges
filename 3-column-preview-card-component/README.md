@@ -14,7 +14,7 @@ Users should be able to:
 <table>
   <tr>
     <td><img src="screenshot-desktop.jpg" alt="Screenshot of the desktop layout"></td>
-    <td rowspan="2"><img src="screenshot-mobile.jpg" alt="Screenshot of the mobile layout"></td>
+    <td rowspan="2"><img src="screenshot-mobile.jpg" width="70%" alt="Screenshot of the mobile layout"></td>
   </tr>
   <tr>
     <td><img src="screenshot-tablet.jpg" alt="Screenshot of the tablet layout"></td>
