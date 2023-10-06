@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+$bg-mob-top: url(../images/bg-pattern-top-mobile.svg);
+$bg-mob-bot: url(../images/bg-pattern-bottom-mobile.svg);
+$bg-desk-top: url(../images/bg-pattern-top-desktop.svg);
+$bg-desk-bot: url(../images/bg-pattern-bottom-desktop.svg);
+
+$star: url(../images/icon-star.svg);
+$fiveStars: $star, $star, $star, $star, $star;
+
+$bg-change: 23.44rem;
+$tab: 43.19rem;
+$sm-sc: 49.31rem;
+$lr-sc: 63.44rem;
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 100%;
+  text-align: center;
+  line-height: 1.5rem;
+  color: hsl(300, 43%, 22%);
+  background: 
+    $bg-mob-top no-repeat top left,
+    $bg-mob-bot no-repeat right bottom;
+  @media (min-width: $bg-change) {
+    background:
+      $bg-desk-top no-repeat top left;
+  }
+  @media (min-width: $lr-sc) {
+    background:
+      $bg-desk-top no-repeat top left,
+      $bg-desk-bot no-repeat bottom right;
+  }
+}
+
+.container {
+  max-width: 70rem;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+section {
+  display: grid;
+  row-gap: 2.5rem;
+  @media (min-width: $tab) {
+    grid-template-columns: minmax(min-content, 27.5rem) 1fr;
+    column-gap: 3rem;
+  }
+  @media (min-width: $lr-sc) {
+    row-gap: 4rem;
+  }
+}
+
+.introduction {
+  @media (min-width: $tab) {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+    @media (min-width: $tab) {
+      font-size: 3.2rem;
+    }
+  }
+
+  p { font-size: 1.13rem; }
+}
+
+.rating {
+  @media (min-width: $lr-sc) {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+
+    ul {
+      width: 28.125rem;
+    }
+  }
+}
+
+li {
+  font-weight: 700;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem;
+  border-radius: 7px;
+  &:not(li:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  @media (min-width: $lr-sc) {
+    position: relative;
+    overflow: auto;
+    &:nth-of-type(1) {
+      right: 6.25rem;
+    }
+    &:nth-of-type(2) {
+      right: 3.125rem;
+    }
+  }
+  
+  .stars {
+    height: 1rem;
+    width: 117px;
+    background: $fiveStars;
+    background-position: 0px, 25px, 50px, 75px, 100px;
+    background-repeat: no-repeat;
+    margin: 0 auto 0.8rem auto;
+    @media (min-width: $lr-sc) {
+      margin: 0 1.5rem;
+      float: left;
+    }
+  }
+  
+  p {
+    font-size: 1.23rem;
+    margin: 0 auto;
+    @media (min-width: $tab) {
+      width: max-content;
+    }
+    @media (min-width: $lr-sc) {
+      float: left;
+    }
+  }
+}
+
+.opinions {
+  display: grid;
+  row-gap: 1rem;
+  @media (min-width: $tab) {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  @media (min-width: $sm-sc) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+figure {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+  padding: 2.3rem;
+  @media (min-width: $sm-sc) {
+    position: relative;
+    &:nth-of-type(2) {
+      top: 1rem;
+    }
+    &:nth-of-type(3) {
+      top: 2rem;
+    }
+  }
+}
+
+figcaption {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @media (min-width: $sm-sc) {
+    width: max-content;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-right: 1.2rem;
+  }
+
+  .title {
+    color: hsl(333, 80%, 67%);
+  }
+}
+
+blockquote {
+  text-align: left;
+  color: hsl(300, 24%, 96%);
+}
+
+.attribution {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  @media (min-width: $sm-sc) {
+    margin-top: 3.5rem;
+  }
+  @media (min-width: $lr-sc) {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.32rem;
+  }
+}
+
+a {
+  color: hsl(300, 43%, 22%);
+  font-weight: 500;
+  &:hover {
+    color: hsl(300, 43%, 22%, .7);
+  }
+}
