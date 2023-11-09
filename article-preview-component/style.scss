@@ -8,7 +8,11 @@
   --white: hsl(0, 0%, 100%);
 }
 
-html {
+$desktop: 51.88rem;
+
+html, body {
+  display: grid;
+  height: 100%;
   font-size: 16px;
   background-color: var(--very-light-blue);
 }
@@ -20,6 +24,9 @@ html {
   font-size: 0.81rem;
   color: var(--dark-blue);
   line-height: 1.5rem;
+  @media (min-width: $desktop) {
+    width: 46.88rem;
+  }
 
   .preview,
   .author,
@@ -38,6 +45,14 @@ html {
 
 article {
   margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow:
+    0px 5px 20px hsla(214, 17%, 51%, .2);
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 18.75rem 28.13rem;
+    position: relative;
+  }
 }
 
 .preview-img {
@@ -47,6 +62,12 @@ article {
   background-size: 100% auto;
   background-position: center 23%;
   border-radius: 10px 10px 0 0;
+  @media (min-width: $desktop) {
+    height: 17.94rem;
+    background-size: 122% auto;
+    background-position: 0 center;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 .preview {
@@ -54,6 +75,9 @@ article {
   background-color: white;
   padding: 2.3rem 1.9rem 0 1.9rem;
   border-radius: 0 0 10px 10px;
+  @media (min-width: $desktop) {
+    border-radius: 0 10px 10px 0;
+  }
 
   h1,
   > p {
@@ -121,6 +145,28 @@ article {
   margin: 0 -1.9rem;
   padding-left: 1.9rem;
   border-radius: 0 0 10px 10px;
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 54%;
+    right: -4.5%;
+    border-radius: 8px;
+    padding: 0.9rem 0.9rem 0.9rem 1.9rem;
+    box-shadow:
+      0px 7px 15px hsla(214, 17%, 51%, .3);
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color:
+        var(--very-dark-blue)
+        transparent transparent transparent;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+    }
+  }
   @media (min-width: 19.69rem) {
     grid-template-columns: auto 1fr;
   }
@@ -145,14 +191,28 @@ article {
 .share-icon,
 .share-box svg {
   &:hover {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
   }
   &:active {
-   opacity: 0.6;
+   opacity: 0.8;
   }
 }
 
 footer {
   margin: 1.5rem 0;
+  padding: 0.3rem 1.9rem;
   text-align: center;
+  background-color: hsla(212, 23%, 69%, 0.2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  p, a {
+    font-size: 0.7rem;
+  }
+  
+  p:first-of-type::after {
+    content: " ";
+    white-space: pre-wrap;
+  }
 }
