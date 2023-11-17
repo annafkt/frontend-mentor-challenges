@@ -30,7 +30,7 @@ html, body {
 .rating {
   background-color: var(--dark-blue);
   border-radius: 1rem;
-  padding: 1.6rem;
+  padding: clamp(0.5rem, 5vw, 1.6rem);
   font-size: 0.94rem;
   margin-top: 1.2rem;
 
@@ -57,7 +57,7 @@ html, body {
 }
 
 .radio-buttons {
-  --label-size: 3.125rem;
+  --label-size: min(3.125rem, 23vw);
   --label-position: calc(50% - (var(--label-size) / 2));
 
   display: grid;
@@ -65,6 +65,7 @@ html, body {
   justify-content: space-between;
   @media (max-width: 23.75rem) {
     grid-template-columns: repeat(3, auto);
+    justify-content: start;
   }
 
   span {
@@ -127,6 +128,10 @@ html, body {
     opacity: .5;
     cursor: not-allowed;
   }
+
+  @media (max-width: 23.75rem) {
+    width: min(10.8rem, 100%);
+  }
 }
 
 .response {
@@ -134,10 +139,10 @@ html, body {
   text-align: center;
 
   .response-img {
-    height: 108px;
+    height: min(108px, 40vw);
     background: url(../images/illustration-thank-you.svg);
     background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-size: auto 100%;
     background-position: center;
     margin: 1rem 0;
   }
