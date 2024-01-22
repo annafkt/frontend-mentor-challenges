@@ -1,3 +1,5 @@
+@use '../footer-style' as f;
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
 :root {
@@ -32,14 +34,6 @@ html, body {
   .author,
   .links {
     display: grid;
-  }
-
-  a {
-    color: var(--very-dark-blue);
-    font-weight: 700;
-    &:hover {
-      color: var(--dark-blue);
-    }
   }
 }
 
@@ -85,8 +79,13 @@ article {
   }
 
   h1 a {
+    color: var(--very-dark-blue);
+    font-weight: 700;
     text-decoration: none;
     font-size: 1.1rem;
+    &:hover {
+      color: var(--dark-blue);
+    }
   }
 
   > p {
@@ -199,20 +198,8 @@ article {
 }
 
 footer {
-  margin: 1.5rem 0;
-  padding: 0.3rem 1.9rem;
-  text-align: center;
-  background-color: hsla(212, 23%, 69%, 0.2);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  p, a {
-    font-size: 0.7rem;
-  }
-  
-  p:first-of-type::after {
-    content: " ";
-    white-space: pre-wrap;
-  }
+  @include f.footer(
+    hsl(212, 23%, 69%), hsl(217, 19%, 35%),
+    0.7rem, 1.5rem, 1.9rem
+  );
 }
