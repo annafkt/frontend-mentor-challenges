@@ -160,7 +160,11 @@ html, body {
 }
 
 footer {
-  @include f.footer(
-    hsl(216, 12%, 54%), white, 0.8rem, 1.2rem, 0
-  );
+  $bg: hsl(216, 12%, 54%);
+  $a: hsl(0, 0%, 100%);
+  $font: 0.8rem;
+  $margin: 1.2rem;
+  $padding: 0;
+  
+  @include f.footer($bg, $a, $font, $margin, $padding);
 }

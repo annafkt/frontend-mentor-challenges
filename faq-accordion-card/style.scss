@@ -114,8 +114,11 @@ article {
 }
 
 footer {
-  @include f.footer(
-    white, hsl(238, 29%, 16%), 
-    0.8rem, min(1.5rem, 5vw), 1.5rem
-  );
+  $bg: hsl(0, 0%, 100%);
+  $a: hsl(238, 29%, 16%);
+  $font: 0.8rem;
+  $margin: min(1.5rem, 5vw);
+  $padding: 1.5rem;
+
+  @include f.footer($bg, $a, $font, $margin, $padding);
 }
