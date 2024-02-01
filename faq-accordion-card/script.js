@@ -3,7 +3,7 @@ const questionWrappers = document.querySelectorAll('.q-wrapper');
 questionWrappers.forEach((wrapper) => {
   wrapper.addEventListener('click', showAnswer);
   wrapper.addEventListener('keydown', (e) => {
-    if (e.keyCode == 13) {
+    if (e.key == 'Enter') {
       showAnswer(e);
     }
   });
