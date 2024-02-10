@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+$medium-screen: 23.5rem;
+$large-screen: 62.0625rem;
+
 :root {
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
@@ -19,6 +22,15 @@ body {
   padding: 2.2rem 2.2rem 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $medium-screen) {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: auto calc(100% - 4.5rem);
+  }
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    padding: 2.2rem 21vw 0;
+  }
 }
 
 header img {
@@ -33,9 +45,16 @@ main {
   justify-content: space-between;
   gap: 3.5rem 4vw;
   margin: 3.5rem 0;
+
+  @media (min-width: $large-screen) {
+    margin-bottom: 0;
+  }
 }
 
 .img-container {
+  @media (min-width: $large-screen) {
+    width: 55%;
+  }
 
   img {
     width: 100%;
@@ -44,6 +63,14 @@ main {
 
 .text-container {
   text-align: center;
+
+  @media (min-width: $large-screen) {
+    text-align: left;
+    flex: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   h1 {
     font-family: Poppins, sans-serif;
@@ -70,6 +97,10 @@ main {
     &:active {
       transform: scale(0.9);
     }
+
+    @media (min-width: $large-screen) {
+      width: 30%;
+    }
   }
 }
 
@@ -78,6 +109,10 @@ address {
     display: flex;
     justify-content: center;
     gap: 0.7rem;
+
+    @media (min-width: $large-screen) {
+      justify-content: flex-end;
+    }
   }
 
   a {
