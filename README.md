@@ -12,3 +12,4 @@ These are my solutions to the challenges of [Frontend Mentor](https://www.fronte
 | [Article Preview Component](https://github.com/annafkt/frontend-mentor-challenges/tree/master/article-preview-component) | Newbie | HTML, SCSS, JavaScript |
 | [Interactive Rating Component](https://github.com/annafkt/frontend-mentor-challenges/tree/master/interactive-rating-component) | Newbie | HTML, SCSS, JavaScript |
 | [FAQ Accordion Card](https://github.com/annafkt/frontend-mentor-challenges/tree/main/faq-accordion-card) |Newbie | HTML, SCSS, JavaScript |
+| [Huddle landing page with single introductory section](https://github.com/annafkt/frontend-mentor-challenges/tree/main/huddle-landing-page-with-single-introductory-section) | Newbie | HTML, SCSS |
