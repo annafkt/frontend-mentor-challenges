@@ -1,0 +1,123 @@
+@use '../footer-style' as f;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  background: 
+      var(--violet) url(../images/bg-mobile.svg) no-repeat;
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  padding: 2.2rem 2.2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  width: clamp(8.125rem, 20vw, 10rem);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5rem 4vw;
+  margin: 3.5rem 0;
+}
+
+.img-container {
+
+  img {
+    width: 100%;
+  }
+}
+
+.text-container {
+  text-align: center;
+
+  h1 {
+    font-family: Poppins, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    line-height: 1.4em;
+  }
+
+  p {
+    margin: 1.3rem 0;
+  }
+
+  button {
+    color: var(--violet);
+    border: none;
+    padding: 1em;
+    width: 80%;
+    border-radius: 1.2rem;
+  
+    &:hover {
+      background-color: var(--soft-magenta);
+      color: var(--white);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+address {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  a {
+    border: 1px solid var(--white);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+
+    &:hover {
+      border: 1px solid var(--soft-magenta);
+
+      > svg {
+        fill: var(--soft-magenta);
+      }
+    }
+  }
+
+  svg {
+    display: block;
+    fill: var(--white);
+  }
+
+  .facebook {
+    width: 0.6rem;
+  }
+
+  .twitter,
+  .instagram {
+    width: 0.94rem;
+  }
+}
+
+footer {
+  $bg: hsl(300, 69%, 71%);
+  $a: hsl(0, 0%, 100%);
+  $font: 0.8rem;
+  $margin: 2.2rem;
+  $padding: 4vw;
+
+  @include f.footer($bg, $a, $font, $margin, $padding);
+}
