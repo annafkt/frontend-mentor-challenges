@@ -27,10 +27,6 @@ body {
     background-image: url(../images/bg-desktop.svg);
     background-size: auto calc(100% - 4.5rem);
   }
-
-  @media (min-width: $medium-screen) and (max-width: $large-screen) {
-    padding: 2.2rem 21vw 0;
-  }
 }
 
 header img {
@@ -48,6 +44,10 @@ main {
 
   @media (min-width: $large-screen) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $medium-screen) and (max-width: $large-screen) {
+    padding: 0 calc(21vw - 2.2rem) 0;
   }
 }
 
