@@ -1,0 +1,132 @@
+@use '../footer-style' as f;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$red: hsl(0, 100%, 74%); 
+$green: hsl(154, 59%, 51%);
+$darker-green: hsl(154, 59%, 45%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+$white: hsl(0, 0%, 100%);
+
+$shadow: 0 0.4rem 0.06rem rgba($dark-blue, 30%);
+
+* { box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: 
+      $red url(../images/bg-intro-mobile.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1.5rem 0;
+  font-family: Poppins, sans-serif;
+  color: $white;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.introduction {
+  h2 {
+    font-size: 1.6rem; // clamp() !
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.price-info {
+  background-color: $blue;
+  padding: 1rem min(4.5rem, 13.5vw);
+  border-radius: 0.5rem;
+  margin-bottom: 1.2rem;
+  box-shadow: $shadow;
+
+  b { font-weight: 700; }
+}
+
+form {
+  padding: 1rem;
+  background-color: $white;
+  border-radius: 0.5rem;
+  box-shadow: $shadow;
+
+  input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.7rem;
+  }
+
+  input {
+    font-family: inherit;
+    font-weight: 600;
+    padding: 1em;
+    border: 1px solid rgba($grayish-blue, 70%);
+    border-radius: 0.3rem;
+
+    &:hover {
+      background-color: rgba($grayish-blue, 10%);
+    }
+
+    &:focus {
+     outline: none;
+     box-shadow: 0 0 1px 1px rgba($dark-blue, 50%);
+    }
+  }
+
+  button {
+    background-color: $green;
+    color: $white;
+    border: transparent;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem $darker-green;
+    line-height: 1.1rem;
+
+    &:hover {
+      background-color: rgba($green, 80%);
+    }
+
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0 0.2rem $darker-green;
+    }
+  }
+}
+
+.terms-of-service {
+  color: $grayish-blue;
+  font-size: 0.7rem;
+  line-height: 1.7em;
+
+  a {
+    color: $red;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      color: rgba($red, 70%);
+    }
+  }
+}
+
+footer {
+  $bg: $white;
+  $a: $dark-blue;
+  $font: 0.8rem;
+  $margin: 2rem;
+  $padding: 0;
+
+  @include f.footer($bg, $a, $font, $margin, $padding);
+}
