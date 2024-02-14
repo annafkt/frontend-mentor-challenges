@@ -12,15 +12,18 @@ $white: hsl(0, 0%, 100%);
 
 $shadow: 0 0.4rem 0.06rem rgba($dark-blue, 30%);
 
+$desktop: 57.2rem;
+
 * { box-sizing: border-box; }
 
 body {
   min-height: 100vh;
   background: 
-      $red url(../images/bg-intro-mobile.png) no-repeat;
+      $red url(../images/bg-intro-desktop.png) no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem 1.5rem 0;
   font-family: Poppins, sans-serif;
   color: $white;
@@ -31,12 +34,21 @@ body {
 section {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 3rem;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .introduction {
+  flex: 20.6rem;
+  max-width: 31.25rem;
+  align-self: center;
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+
   h2 {
-    font-size: 1.6rem; // clamp() !
+    font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 700;
     line-height: 1.3em;
     margin-bottom: 1.5rem;
@@ -54,7 +66,7 @@ section {
 }
 
 form {
-  padding: 1rem;
+  padding: clamp(1rem, 5vw, 2rem);
   background-color: $white;
   border-radius: 0.5rem;
   box-shadow: $shadow;
@@ -62,7 +74,7 @@ form {
   input, button {
     display: block;
     width: 100%;
-    margin-bottom: 0.7rem;
+    margin-bottom: clamp(0.7rem, 3vw, 1.1rem);
   }
 
   input {
@@ -129,4 +141,6 @@ footer {
   $padding: 0;
 
   @include f.footer($bg, $a, $font, $margin, $padding);
+  max-width: calc($desktop / 2);
+  width: 100%;
 }
