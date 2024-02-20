@@ -1,12 +1,20 @@
 const inputs = document.querySelectorAll('input');
 const button = document.querySelector('button');
+const password = document.querySelector('#password');
+const passwordMessage = document.querySelector('#password-message');
 const passwordConstraints = 'Should be 8 to 40 characters. Lower case and upper case letters, at least one number and one symbol.';
 
 inputs.forEach(input => {
   input.addEventListener('change', checkPattern); 
 });
 
+password.addEventListener('focus', showPasswordConstraints);
 button.addEventListener('click', lookForInvalidValues);
+
+function showPasswordConstraints() {
+  passwordMessage.textContent = passwordConstraints;
+  passwordMessage.classList.add('password-constraint');
+}
 
 function checkPattern() {
   const input = this;
