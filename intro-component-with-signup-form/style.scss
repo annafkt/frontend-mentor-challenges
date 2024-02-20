@@ -11,6 +11,7 @@ $grayish-blue: hsl(246, 25%, 77%);
 $white: hsl(0, 0%, 100%);
 
 $shadow: 0 0.4rem 0.06rem rgba($dark-blue, 30%);
+$margin-bottom: clamp(0.8rem, 3vw, 1.1rem);
 
 $desktop: 57.2rem;
 
@@ -55,6 +56,10 @@ section {
   }
 }
 
+.form-container {
+  max-width: 29.52875rem;
+}
+
 .price-info {
   background-color: $blue;
   padding: 1rem min(4.5rem, 13.5vw);
@@ -74,15 +79,21 @@ form {
   input, button {
     display: block;
     width: 100%;
-    margin-bottom: clamp(0.7rem, 3vw, 1.1rem);
+    border-radius: 0.3rem;
+  }
+
+  .input-container {
+    display: grid;
+    margin-bottom: $margin-bottom;
   }
 
   input {
+    grid-column: 1 / span 2;
+    grid-row: 1;
     font-family: inherit;
     font-weight: 600;
-    padding: 1em;
+    padding: 1em 3.5em 1em 1em;
     border: 1px solid rgba($grayish-blue, 70%);
-    border-radius: 0.3rem;
 
     &:hover {
       background-color: rgba($grayish-blue, 10%);
@@ -92,17 +103,64 @@ form {
      outline: none;
      box-shadow: 0 0 1px 1px rgba($dark-blue, 50%);
     }
+
+    &.invalid {
+      border: 2px solid $red;
+
+      &:focus {
+        box-shadow: 0 0 1px 1px $red;
+      }
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+
+  .icon,
+  .message { 
+    display: none; 
+  }
+
+  .password-constraint.message,
+  .error.message {
+    display: block;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: right;
+    margin-top: 0.3em;
+    white-space: pre-wrap;
+  }
+
+  .error.icon {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    place-self: center end;
+    margin-right: 1rem;
+  }
+
+  .password-constraint.message {
+    color: $dark-blue;
+  }
+
+  .error.message {
+    color: $red;
+    font-style: italic;
   }
 
   button {
     background-color: $green;
     color: $white;
     border: transparent;
+    margin-bottom: $margin-bottom;
     padding: 1em;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.1em;
-    border-radius: 0.3rem;
     box-shadow: 0 0.3rem $darker-green;
     line-height: 1.1rem;
 
