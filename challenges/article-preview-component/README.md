@@ -13,10 +13,10 @@ Users should be able to:
 
 <table>
   <tr>
-    <td><img src="screenshot-desktop.jpg" alt="Screenshot of the desktop layout">
-    <img src="screenshot-desktop-active.jpg" alt="Screenshot of the desktop layout (active mode"></td>
-    <td><img src="screenshot-mobile.jpg" alt="Screenshot of the mobile layout">
-    <img src="screenshot-mobile-active.jpg" alt="Screenshot of the mobile layout (active mode)"></td>
+    <td><img src="screenshots/screenshot-desktop.jpg" alt="Screenshot of the desktop layout">
+    <img src="screenshots/screenshot-desktop-active.jpg" alt="Screenshot of the desktop layout (active mode"></td>
+    <td><img src="screenshots/screenshot-mobile.jpg" alt="Screenshot of the mobile layout">
+    <img src="screenshots/screenshot-mobile-active.jpg" alt="Screenshot of the mobile layout (active mode)"></td>
   </tr>
 </table>
 

@@ -15,9 +15,9 @@ Users should be able to:
 
 <table>
   <tr>
-    <td><img src="screenshot-disabled.jpg" alt="Screenshot of the app with the disabled button"></td>
-    <td><img src="screenshot-enabled.jpg" alt="Screenshot of the app with the enabled button"></td>
-    <td><img src="screenshot-response.jpg" alt="Screenshot of the Thank you card"></td>
+    <td><img src="screenshots/screenshot-disabled.jpg" alt="Screenshot of the app with the disabled button"></td>
+    <td><img src="screenshots/screenshot-enabled.jpg" alt="Screenshot of the app with the enabled button"></td>
+    <td><img src="screenshots/screenshot-response.jpg" alt="Screenshot of the Thank you card"></td>
   </tr>
 </table>
 

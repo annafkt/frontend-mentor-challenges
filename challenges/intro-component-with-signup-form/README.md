@@ -16,9 +16,9 @@ Users should be able to:
 
 <table>
   <tr>
-    <td><img src="screenshot-desktop.jpg" alt="Screenshot of the desktop version"></td>
-    <td><img src="screenshot-error.jpg" alt="Screenshot of the invalid state"></td>
-    <td><img src="screenshot-mobile.jpg" alt="Screenshot of the mobile version"></td>
+    <td><img src="screenshots/screenshot-desktop.jpg" alt="Screenshot of the desktop version"></td>
+    <td><img src="screenshots/screenshot-error.jpg" alt="Screenshot of the invalid state"></td>
+    <td><img src="screenshots/screenshot-mobile.jpg" alt="Screenshot of the mobile version"></td>
   </tr>
 </table>
 
