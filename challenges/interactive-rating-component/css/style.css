@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --medium-grey-a: hsla(216, 12%, 54%, .15);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html, body {
+  height: 100%;
+  display: grid;
+  background-color: var(--very-dark-blue);
+  font-family: Overpass, sans-serif;
+  font-size: 100%;
+  color: var(--light-grey);
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  width: 90vw;
+  max-width: 24rem;
+  margin: auto;
+  position: relative;
+}
+
+.rating, .response {
+  background-color: var(--dark-blue);
+  border-radius: 1rem;
+  padding: clamp(0.5rem, 5vw, 1.6rem);
+  font-size: 0.94rem;
+  margin-top: 1.2rem;
+}
+.rating h2, .response h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-top: 1rem;
+}
+.rating p, .response p {
+  margin: 1rem 0;
+}
+
+.star-icon {
+  display: inline-block;
+  background: url(../images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--medium-grey-a);
+  border-radius: 50%;
+  padding: 1.2rem;
+}
+
+.radio-buttons {
+  --label-size: min(3.125rem, 23vw);
+  --label-position: calc(50% - (var(--label-size) / 2));
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-between;
+}
+@media (max-width: 23.75rem) {
+  .radio-buttons {
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+  }
+}
+.radio-buttons span {
+  position: relative;
+}
+.radio-buttons label {
+  display: inline-block;
+  width: var(--label-size);
+  height: var(--label-size);
+  line-height: var(--label-size);
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: var(--label-position);
+  top: var(--label-position);
+  background-color: var(--medium-grey-a);
+}
+.radio-buttons input {
+  opacity: 0;
+  width: var(--label-size);
+  height: var(--label-size);
+}
+.radio-buttons input:hover ~ label {
+  background-color: var(--light-grey);
+  color: white;
+}
+.radio-buttons input:checked ~ label {
+  background-color: var(--orange);
+  color: white;
+}
+.radio-buttons input:focus-visible ~ label {
+  border: 0.1em solid var(--white);
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+  background-color: var(--orange);
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.submit-button:hover:enabled {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.submit-button:active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@media (max-width: 23.75rem) {
+  .submit-button {
+    width: min(10.8rem, 100%);
+  }
+}
+
+.response {
+  text-align: center;
+}
+.response .response-img {
+  height: min(108px, 40vw);
+  background: url(../images/illustration-thank-you.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  margin: 1rem 0;
+}
+.response p:first-of-type {
+  color: var(--orange);
+  background-color: var(--medium-grey-a);
+  line-height: normal;
+  display: inline-block;
+  padding: 0.5rem 0.8rem 0.4rem 0.8rem;
+  border-radius: 1rem;
+}
+
+footer {
+  background-color: rgba(124, 135, 152, 0.1);
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2rem 0;
+  padding: 0.3rem 0;
+  border-radius: 0.3rem;
+}
+footer p:first-of-type::after {
+  content: " ";
+  white-space: pre-wrap;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+}
+footer a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+footer a:active {
+  color: rgba(255, 255, 255, 0.8);
+}/*# sourceMappingURL=style.css.map */
