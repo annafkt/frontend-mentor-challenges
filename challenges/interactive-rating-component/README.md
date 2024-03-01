@@ -1,6 +1,7 @@
 # Frontend Mentor - Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+<br>Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## The challenge
 
@@ -28,7 +29,7 @@ Users should be able to:
 - Sass
 - JavaScript
 
-## Useful resources
+## Resources I used
 
 - [Input element with type submit](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit) - *MDN Web Docs*
 

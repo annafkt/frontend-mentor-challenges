@@ -1,6 +1,7 @@
 # Frontend Mentor - Intro component with sign-up form solution
 
-This is a solution to the [Intro component with sign-up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).<br>Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Intro component with sign-up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1).
+<br>Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## The challenge
 
@@ -50,7 +51,7 @@ Users should be able to:
 
 - I was confused about the `forEach()` method, since I thought of it as a loop and I wanted it to jump to the next iteration with the `continue` statement. But because it's a function I needed to use the `return` statement to stop its execution.<br>
 [See here](https://stackoverflow.com/questions/72775702/continue-inside-a-foreach-loop) - *Stackoverflow*
-- A [nice trick](https://stackoverflow.com/questions/31002593/type-new-line-character-in-element-textcontent) to render new line characters in HTML with the white-space CSS property - *Stackoverflow*<br>
+- A [nice trick](https://stackoverflow.com/questions/31002593/type-new-line-character-in-element-textcontent) to render new line characters in HTML with the `white-space` CSS property - *Stackoverflow*<br>
 See also: [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) - *MDN Web Docs*
 - Input elements don't inherit the font-family automatically.<br>
 [See here](https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-font-from-body) - *Stackoverflow*

@@ -1,6 +1,7 @@
 # Frontend Mentor - Article preview component solution
 
 This is my solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
+<br>Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## The challenge
 
@@ -28,7 +29,7 @@ Users should be able to:
 - JavaScript
 - Mobile-first workflow
 
-## Useful resources
+## Resources I used
 
 - Some thoughts about which is better: to put the header inside an anchor tag or the anchor tag inside the header.<br>
 [Link in header? Or header in link?](https://css-tricks.com/link-header-header-link/) - *CSS Tricks*
