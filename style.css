@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --black: #000;
+  --soft-black: #333;
+  --purple: #ae0d7a;
+  --light-purple: #ed12a8;
+  --green: #cbe432;
+  --white: #fff;
+
+  --body-padding-top-bottom: 2.5rem;
+  --card-border: 0.25rem;
+  --title-link-padding: 0.8rem;
+  --link-margin-left-right: 2rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--black);
+  font-family: 'Exo 2', sans-serif;
+  color: var(--white);
+  padding: var(--body-padding-top-bottom) min(3rem, 8vw);
+}
+
+/* SOLUTIONS */
+
+.difficulty-level {
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.15rem solid var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 var(--body-padding-top-bottom) 0;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 
+      repeat(auto-fill, minmax(min(18.75rem, 100%), 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  background-color: var(--white);
+  border: var(--card-border) solid var(--white);
+  border-radius: 0.938rem;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px white;
+  transform: rotate(1deg);
+}
+
+.card .title {
+  background-color: var(--soft-black);
+  grid-area: 3 / 1;
+  padding: var(--title-link-padding);
+  margin-bottom: calc(var(--card-border) + var(--title-link-padding));
+  text-align: center;
+  line-height: 1.2em;
+  display: grid;
+  align-content: center;
+}
+
+.card .technologies {
+  background-color: var(--purple);
+  padding: 1rem 1rem 1rem var(--link-margin-left-right);
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.card .preview {
+  grid-area: 2 / 1;
+  margin: var(--card-border) 0 0;
+  width: 100%;
+  height: auto;
+}
+
+.card .link {
+  padding: var(--title-link-padding);
+  margin: 0 var(--link-margin-left-right);
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black);
+  transition: box-shadow 0.3s;
+}
+
+.card .link:hover {
+  box-shadow: inset 0 -0.1875rem 0 var(--soft-black);
+}
+
+.card .link:active {
+  transform: scale(0.95);
+}
+
+.card .link.live {
+  background-color: var(--green);
+}
