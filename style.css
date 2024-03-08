@@ -12,6 +12,8 @@
   --card-border: 0.25rem;
   --title-link-padding: 0.8rem;
   --link-margin-left-right: 2rem;
+
+  --icon-size: clamp(1.6rem, 3.5vw, 2.2rem);
 }
 
 * { box-sizing: border-box; }
@@ -22,6 +24,30 @@ body {
   color: var(--white);
   padding: var(--body-padding-top-bottom) min(3rem, 8vw);
   font-size: clamp(1rem, 2.45vw, 1.5rem);
+}
+
+/* HEADER */
+
+.contact-icons {
+  display: flex;
+  gap: 0.9em;
+}
+
+.contact-icons .icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.contact-icons .icon:hover svg {
+  fill: var(--light-purple);
+}
+
+.contact-icons .icon:active {
+  transform: scale(0.9);
+}
+
+.contact-icons svg {
+  fill: var(--green);
 }
 
 /* SOLUTIONS */
