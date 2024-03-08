@@ -5,6 +5,7 @@
   --soft-black: #333;
   --purple: #ae0d7a;
   --light-purple: #ed12a8;
+  --blue: #00a9ff;
   --green: #cbe432;
   --white: #fff;
 
@@ -48,6 +49,53 @@ body {
 
 .contact-icons svg {
   fill: var(--green);
+}
+
+/* INTRODUCTION */
+
+.introduction h1 {
+  font-size: clamp(1.7rem, 8vw, 5rem);
+  line-height: 1.1em;
+  margin: var(--body-padding-top-bottom) 0;
+  font-weight: 600;
+}
+
+.introduction p {
+  line-height: 1.4em;
+}
+
+.introduction span {
+  white-space: nowrap;
+}
+
+.introduction a {
+  color: var(--blue);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.introduction .link-icon {
+  fill: var(--blue);
+  width: 0.7em;
+  height: auto;
+}
+
+.introduction a:hover {
+  color: var(--light-purple);
+}
+
+.introduction a:hover > .link-icon {
+  fill: var(--light-purple);
+}
+
+.introduction a:active {
+  color: var(--purple);
+}
+
+@media (max-width: 66.25rem) {
+  .introduction {
+    text-align: center;
+  }
 }
 
 /* SOLUTIONS */
