@@ -13,7 +13,12 @@ $tab: 43.19rem;
 $sm-sc: 49.31rem;
 $lr-sc: 63.44rem;
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: grid;
   font-family: "League Spartan", sans-serif;
   font-size: 100%;
   text-align: center;
