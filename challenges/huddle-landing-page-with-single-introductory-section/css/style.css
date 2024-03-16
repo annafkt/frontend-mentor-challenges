@@ -136,6 +136,7 @@ address .instagram {
 footer {
   background-color: rgba(232, 130, 232, 0.1);
   font-size: 0.8rem;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

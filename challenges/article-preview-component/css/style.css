@@ -190,6 +190,7 @@ article {
 footer {
   background-color: rgba(158, 175, 194, 0.1);
   font-size: 0.7rem;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
