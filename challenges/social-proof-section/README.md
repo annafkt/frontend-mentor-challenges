@@ -27,12 +27,11 @@ Users should be able to:
 
 ## Resources I used
 
-- Parent element with floated children collapses:
-<br>[See here](https://stackoverflow.com/questions/11498946/div-shrinks-when-float-is-applied-to-its-sub-elements)
-<br>[See also](https://stackoverflow.com/questions/16041229/css-overflowhidden-with-floats) - *Stackoverflow*
+- Parent element with floated children collapses:<br>
+[See here](https://stackoverflow.com/questions/11498946/div-shrinks-when-float-is-applied-to-its-sub-elements)<br>
+[See also](https://stackoverflow.com/questions/16041229/css-overflowhidden-with-floats) - *Stackoverflow*
 
-- [Quotations in HTML](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/) - *CSS Tricks*
-<br>
+- [Quotations in HTML](https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/) - *CSS Tricks*<br>
 [Figure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) - *MDN Web Docs*
 
 - [Best practises for nesting in Sass](https://stackoverflow.com/questions/13805324/how-bad-is-it-in-practice-to-over-nest-selectors-in-sass-scss) - *Stackoverflow*
