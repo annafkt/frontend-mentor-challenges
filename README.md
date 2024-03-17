@@ -2,7 +2,8 @@
 
 This is a collection of my coding solutions to the challenges on [Frontend Mentor](https://www.frontendmentor.io).
 
-These challenges provide a great opportunity to practise coding, experiment with tools and languages and learn a lot throughout the process.<br>
+These challenges provide a great opportunity to practise coding, experiment with tools and languages and learn a lot throughout the process.
+
 By completing these projects I can
 - strengthen my problem solving skills
 - gain a deeper understanding of web technologies
@@ -11,6 +12,8 @@ By completing these projects I can
 
 In the list below you can check the ones I have completed so far, or see them live here:<br>
 https://annafkt.github.io/frontend-mentor-challenges.
+
+<br>
 
 | Challenges | Difficulty | Technologies | Live |
 | :--------- | :--------: | :----------: | :-----------: |
@@ -29,7 +32,9 @@ https://annafkt.github.io/frontend-mentor-challenges.
 
 For each challenge, I try to gather all the resources I have read through to be able to complete the task. This helps me remember newly learned concepts and I can also refer back to them later.
 
-For creating the **landing page of my live collection** I used the following resources:
+### Resources for the live version
+
+For creating the landing page of my GitHub Pages site I used the following resources:
 
 - [JS object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) - *MDN Web Docs*
 
