@@ -18,6 +18,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Stats preview card component](https://annafkt.github.io/frontend-mentor-challenges/challenges/stats-preview-card-component/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

@@ -20,6 +20,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[FAQ accordion card](https://annafkt.github.io/frontend-mentor-challenges/challenges/faq-accordion-card/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

@@ -22,6 +22,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[3-column preview card component](https://annafkt.github.io/frontend-mentor-challenges/challenges/3-column-preview-card-component/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

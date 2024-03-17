@@ -21,6 +21,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Article preview component](https://annafkt.github.io/frontend-mentor-challenges/challenges/article-preview-component/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

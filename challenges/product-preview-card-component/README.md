@@ -19,6 +19,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Product preview card component](https://annafkt.github.io/frontend-mentor-challenges/challenges/product-preview-card-component/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

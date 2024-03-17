@@ -23,6 +23,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Intro component with sign-up form](https://annafkt.github.io/frontend-mentor-challenges/challenges/intro-component-with-signup-form/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

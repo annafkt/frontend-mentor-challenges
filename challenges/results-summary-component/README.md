@@ -19,6 +19,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Results summary component](https://annafkt.github.io/frontend-mentor-challenges/challenges/results-summary-component/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

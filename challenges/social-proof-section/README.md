@@ -18,6 +18,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Social proof section](https://annafkt.github.io/frontend-mentor-challenges/challenges/social-proof-section/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup

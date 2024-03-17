@@ -19,6 +19,11 @@ Users should be able to:
   </tr>
 </table>
 
+## Live
+
+You can see the live demo here:
+[Huddle landing page](https://annafkt.github.io/frontend-mentor-challenges/challenges/huddle-landing-page-with-single-introductory-section/index.html)
+
 ## Built with
 
 - Semantic HTML5 markup
