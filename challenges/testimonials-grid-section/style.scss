@@ -15,9 +15,9 @@ $bg-colors: $moderate-violet,
             $very-dark-blackish-blue,
             $white;
 
-$small-screen: 570.398px;
-$medium-screen: 853.596px;
-$lr-screen: 1136.79px;
+$small-screen: 35.65rem;
+$medium-screen: 53.35rem;
+$lr-screen: 75rem;
 
 $column-size: 16.25rem;
 
@@ -30,7 +30,7 @@ body {
   font-size: 0.85rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  padding: 1.7rem;
+  padding: 1.7rem 1.7rem 0;
 }
 
 @for $i from 1 through length($bg-colors) {
@@ -43,35 +43,31 @@ body {
   display: inline-grid;
   gap: 1.45rem;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-    "daniel" 
-    "jonathan" 
-    "jeanette" 
-    "patrick" 
-    "kira";
+  grid-template-areas: "daniel" 
+                       "jonathan" 
+                       "jeanette" 
+                       "patrick" 
+                       "kira";
 
   @media (min-width: $small-screen) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-      "daniel daniel"
-      "jonathan jeanette"
-      "patrick patrick"
-      "kira kira";
+    grid-template-areas: "daniel daniel"
+                         "jonathan jeanette"
+                         "patrick patrick"
+                         "kira kira";
   }
 
   @media (min-width: $medium-screen) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-      "daniel daniel jonathan"
-      "jeanette patrick patrick"
-      "kira kira kira";
+    grid-template-areas: "daniel daniel jonathan"
+                         "jeanette patrick patrick"
+                         "kira kira kira";
   }
 
   @media (min-width: $lr-screen) {
     grid-template-columns: repeat(4, $column-size);
-    grid-template-areas: 
-      "daniel daniel jonathan kira"
-      "jeanette patrick patrick kira";
+    grid-template-areas: "daniel daniel jonathan kira"
+                         "jeanette patrick patrick kira";
   }
 }
 
@@ -155,7 +151,7 @@ body {
   $bg: $very-dark-grayish-blue;
   $a: $moderate-violet;
   $font: inherit;
-  $margin: 1.45rem;
+  $margin: 1.7rem;
   $padding: 0.5rem;
 
   @include f.footer($bg, $a, $font, $margin, $padding);
