@@ -41,7 +41,12 @@ const challenges = {
           "technologies": "HTML, SCSS, JS"
       }
   ],
-  "junior": []
+  "junior": [
+      {
+          "title": "Testimonials grid section",
+          "technologies": "HTML, SCSS"
+      }
+  ]
 }
 
 export default challenges;
