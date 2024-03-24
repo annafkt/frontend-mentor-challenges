@@ -13,10 +13,17 @@ By completing these projects I can
 In the list below you can check the ones I have completed so far, or see them live here:<br>
 https://annafkt.github.io/frontend-mentor-challenges.
 
+<<<<<<< HEAD
 <br>
+=======
+- [Newbie](#newbie)
+- [Junior](#junior)
+
+## Newbie
+>>>>>>> testimonials-grid-section
 
 | Challenges | Difficulty | Technologies | Live |
-| :--------- | :--------: | :----------: | :-----------: |
+| :--------- | :--------: | :----------: | :--: |
 | [Results summary component](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/results-summary-component) | Newbie | HTML, CSS | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/results-summary-component/index.html) |
 | [Product preview card component](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/product-preview-card-component) | Newbie | HTML, CSS | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/product-preview-card-component/index.html) |
 | [Stats preview card component](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/stats-preview-card-component) | Newbie | HTML, CSS | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/stats-preview-card-component/index.html) |
@@ -27,6 +34,12 @@ https://annafkt.github.io/frontend-mentor-challenges.
 | [FAQ accordion card](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/faq-accordion-card) |Newbie | HTML, SCSS, JavaScript | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/faq-accordion-card/index.html) |
 | [Huddle landing page with single introductory section](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/huddle-landing-page-with-single-introductory-section) | Newbie | HTML, SCSS | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/huddle-landing-page-with-single-introductory-section/index.html) |
 | [Intro component with sign-up form](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/intro-component-with-signup-form) | Newbie | HTML, SCSS, JavaScript | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/intro-component-with-signup-form/index.html) |
+
+## Junior
+
+| Challenges | Difficulty | Technologies | Live |
+| :--------- | :--------: | :----------: | :--: |
+| [Testimonials grid section](https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/testimonials-grid-section) | Junior | HTML, SCSS | [Live](https://annafkt.github.io/frontend-mentor-challenges/challenges/testimonials-grid-section/index.html) |
 
 ## Resources
 
