@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(210, 46%, 95%);
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
-  padding: 1.6rem;
+  padding: 1.7rem;
 }
 
 .testimonial:nth-child(1) {
@@ -28,8 +32,28 @@ body {
 }
 
 #testimonials {
-  display: grid;
-  gap: 1.6rem;
+  display: inline-grid;
+  gap: 1.45rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+}
+@media (min-width: 570.398px) {
+  #testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "daniel daniel" "jonathan jeanette" "patrick patrick" "kira kira";
+  }
+}
+@media (min-width: 853.596px) {
+  #testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "daniel daniel jonathan" "jeanette patrick patrick" "kira kira kira";
+  }
+}
+@media (min-width: 1136.79px) {
+  #testimonials {
+    grid-template-columns: repeat(4, 16.25rem);
+    grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+  }
 }
 
 .testimonial {
@@ -54,7 +78,7 @@ body {
   font-weight: 600;
 }
 .testimonial .quote-part-1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.3em;
   margin: 1.5rem 0;
 }
@@ -66,6 +90,15 @@ body {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 95% 0%;
+  grid-area: daniel;
+}
+
+.testimonial:nth-child(4) {
+  grid-area: patrick;
+}
+
+.testimonial:nth-child(5) {
+  grid-area: kira;
 }
 
 .testimonial:nth-child(1) .name,
