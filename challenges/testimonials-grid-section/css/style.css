@@ -141,4 +141,31 @@ body {
 .testimonial.jeanette .quote-part-2,
 .testimonial.kira .quote-part-2 {
   color: rgba(25, 33, 46, 0.7);
+}
+
+.attribution {
+  background-color: rgba(72, 85, 106, 0.1);
+  font-size: inherit;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.45rem 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  line-height: 1.5rem;
+}
+.attribution p:first-of-type::after {
+  content: " ";
+  white-space: pre-wrap;
+}
+.attribution a {
+  color: rgba(117, 65, 200, 0.8);
+  font-weight: 700;
+}
+.attribution a:hover {
+  color: rgba(117, 65, 200, 0.6);
+}
+.attribution a:active {
+  color: rgba(117, 65, 200, 0.8);
 }/*# sourceMappingURL=style.css.map */
