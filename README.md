@@ -13,14 +13,10 @@ By completing these projects I can
 In the list below you can check the ones I have completed so far, or see them live here:<br>
 https://annafkt.github.io/frontend-mentor-challenges.
 
-<<<<<<< HEAD
-<br>
-=======
 - [Newbie](#newbie)
 - [Junior](#junior)
 
 ## Newbie
->>>>>>> testimonials-grid-section
 
 | Challenges | Difficulty | Technologies | Live |
 | :--------- | :--------: | :----------: | :--: |
