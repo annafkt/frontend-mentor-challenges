@@ -86,51 +86,59 @@ body {
   line-height: 1.5em;
 }
 
-.testimonial:nth-child(1) {
+.testimonial.daniel {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 95% 0%;
   grid-area: daniel;
 }
 
-.testimonial:nth-child(4) {
+.testimonial.jonathan {
+  grid-area: jonathan;
+}
+
+.testimonial.jeanette {
+  grid-area: jeanette;
+}
+
+.testimonial.patrick {
   grid-area: patrick;
 }
 
-.testimonial:nth-child(5) {
+.testimonial.kira {
   grid-area: kira;
 }
 
-.testimonial:nth-child(1) .name,
-.testimonial:nth-child(2) .name,
-.testimonial:nth-child(4) .name {
+.testimonial.daniel .name,
+.testimonial.jonathan .name,
+.testimonial.patrick .name {
   color: hsl(0, 0%, 81%);
 }
-.testimonial:nth-child(1) .title,
-.testimonial:nth-child(2) .title,
-.testimonial:nth-child(4) .title {
+.testimonial.daniel .title,
+.testimonial.jonathan .title,
+.testimonial.patrick .title {
   color: rgba(207, 207, 207, 0.5);
 }
-.testimonial:nth-child(1) .quote-part-1,
-.testimonial:nth-child(2) .quote-part-1,
-.testimonial:nth-child(4) .quote-part-1 {
+.testimonial.daniel .quote-part-1,
+.testimonial.jonathan .quote-part-1,
+.testimonial.patrick .quote-part-1 {
   color: hsl(0, 0%, 100%);
 }
-.testimonial:nth-child(1) .quote-part-2,
-.testimonial:nth-child(2) .quote-part-2,
-.testimonial:nth-child(4) .quote-part-2 {
+.testimonial.daniel .quote-part-2,
+.testimonial.jonathan .quote-part-2,
+.testimonial.patrick .quote-part-2 {
   color: rgba(207, 207, 207, 0.7);
 }
 
-.testimonial:nth-child(3) .name,
-.testimonial:nth-child(5) .name {
+.testimonial.jeanette .name,
+.testimonial.kira .name {
   color: hsl(219, 29%, 14%);
 }
-.testimonial:nth-child(3) .title,
-.testimonial:nth-child(5) .title {
+.testimonial.jeanette .title,
+.testimonial.kira .title {
   color: rgba(25, 33, 46, 0.5);
 }
-.testimonial:nth-child(3) .quote-part-2,
-.testimonial:nth-child(5) .quote-part-2 {
+.testimonial.jeanette .quote-part-2,
+.testimonial.kira .quote-part-2 {
   color: rgba(25, 33, 46, 0.7);
 }/*# sourceMappingURL=style.css.map */

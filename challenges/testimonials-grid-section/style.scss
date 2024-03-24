@@ -108,24 +108,32 @@ body {
   }
 }
 
-.testimonial:nth-child(1) {
+.testimonial.daniel {
   background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 95% 0%;
   grid-area: daniel;
 }
 
-.testimonial:nth-child(4) {
+.testimonial.jonathan {
+  grid-area: jonathan;
+}
+
+.testimonial.jeanette {
+  grid-area: jeanette;
+}
+
+.testimonial.patrick {
   grid-area: patrick;
 }
 
-.testimonial:nth-child(5) {
+.testimonial.kira {
   grid-area: kira;
 }
 
-.testimonial:nth-child(1),
-.testimonial:nth-child(2),
-.testimonial:nth-child(4) {
+.testimonial.daniel,
+.testimonial.jonathan,
+.testimonial.patrick {
 
   .name { color: $light-gray; }
   .title { color: rgba($light-gray, 50%); }
@@ -133,8 +141,8 @@ body {
   .quote-part-2 { color: rgba($light-gray, 70%); }
 }
 
-.testimonial:nth-child(3),
-.testimonial:nth-child(5) {
+.testimonial.jeanette,
+.testimonial.kira {
 
   .name { color: $very-dark-blackish-blue; }
   .title { color: rgba($very-dark-blackish-blue, 50%); }
