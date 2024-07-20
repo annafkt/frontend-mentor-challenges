@@ -7,21 +7,51 @@
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
+  <div class="container">
+    <div class="storage">
+      <div class="files">
+        <img class="logo" src="./images/logo.svg" alt="">
+        <ul class="icons">
+          <li>
+            <button>
+              <img src="./images/icon-document.svg" alt="Document icon" width="20" height="24">
+            </button>
+          </li>
+          <li>
+            <button>
+              <img src="./images/icon-folder.svg" alt="Folder icon" width="24" height="20">
+            </button>
+          </li>
+          <li>
+            <button>
+              <img src="./images/icon-upload.svg" alt="Upload icon" width="24" height="16">
+            </button>
+          </li>
+        </ul>
+      </div>
   
-  0 GB
-  1000 GB
+      <div class="storage-space">
+        <div class="space-left">
+          <p>185 GB Left</p>
+        </div>
+        <div class="visual-info">
+          <p class="info-for-user">You’ve used 815 GB of your storage</p>
+          <meter value="50" max="100"></meter>
+          <p class="min-space">0 GB</p>
+          <p class="max-space">1000 GB</p>
+        </div>
+      </div>
+    </div>
   
-  <footer class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-    <p>Coded by <a href="https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/fylo-data-storage-component" target="_blank">annafkt</a>.</p>
-  </footer>
+    <footer class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="https://github.com/annafkt/frontend-mentor-challenges/tree/main/challenges/fylo-data-storage-component" target="_blank">annafkt</a>.</p>
+    </footer>
+  </div>
 </body>
 </html>
