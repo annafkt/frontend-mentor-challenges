@@ -1,0 +1,116 @@
+@use '../footer-style' as f;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$paleblue: hsl(243, 100%, 93%);
+$grayish-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dark-blue: hsl(229, 57%, 11%);
+
+$body-margin: 2rem;
+$left-column-width: 19rem;
+$right-column-width: 32rem;
+$column-gap: 1.5rem;
+
+$mobile: 
+    calc(
+      $body-margin * 2 +
+      $left-column-width + 
+      $right-column-width + 
+      $column-gap
+    );
+
+* { box-sizing: border-box; }
+
+body  {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  color: $paleblue;
+  background: 
+      $very-dark-blue url(../images/bg-desktop.png) no-repeat;
+  background-position: 0 100%;
+  background-size: max(1440px, 100vw) 55%;
+  margin: 0 $body-margin;
+
+  @media (max-width: $mobile) {
+    margin: 0;
+    background: 
+        $very-dark-blue url(../images/bg-mobile.png) no-repeat;
+    background-position: 100%;
+    background-size: 100% 100%;
+  }
+}
+
+.container {
+  margin: auto;
+}
+
+.storage {
+  display: grid;
+  grid-template-columns: $left-column-width $right-column-width;
+  gap: 1.2rem $column-gap;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 85vw;
+  }
+}
+
+.files {
+  background-color: $dark-blue;
+}
+
+.files {
+  padding: 2.3rem;
+  border-radius: 0.6rem 5.2rem 0.6rem 0.6rem;
+
+  .logo {
+    width: 7.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+  ul {
+    width: 10rem;
+    display: flex;
+    column-gap: 0.7rem;
+
+    li {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0;
+      border-radius: 0.5rem;
+      background-color: $very-dark-blue;
+      cursor: pointer;
+      transition: transform 0.3s;
+    
+      &:hover {
+        background-color: rgba($very-dark-blue, 70%);
+        transform: scale(1.1);
+      }
+    }
+
+    button {
+      border: 0;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      cursor: pointer;
+    } 
+  }
+}
+
+.attribution {
+  $bg: white;
+  $a: lightgrey;
+  $font: 0.8rem;
+  $margin: 1.3rem;
+  $padding: 0rem;
+
+  @include f.footer($bg, $a, $font, $margin, $padding);
+
+  @media (max-width: $mobile) {
+    width: 85vw;
+  }
+}
