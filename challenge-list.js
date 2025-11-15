@@ -45,6 +45,10 @@ const challenges = {
       {
           "title": "Testimonials grid section",
           "technologies": "HTML, SCSS"
+      },
+      {
+          "title": "Fylo data storage component",
+          "technologies": "HTML, SCSS"
       }
   ]
 }
