@@ -157,12 +157,12 @@ footer p:first-of-type::after {
   white-space: pre-wrap;
 }
 footer a {
-  color: rgba(29, 30, 53, 0.8);
+  color: rgba(28.968, 29.7568, 52.632, 0.8);
   font-weight: 700;
 }
 footer a:hover {
-  color: rgba(29, 30, 53, 0.6);
+  color: rgba(28.968, 29.7568, 52.632, 0.6);
 }
 footer a:active {
-  color: rgba(29, 30, 53, 0.8);
+  color: rgba(28.968, 29.7568, 52.632, 0.8);
 }/*# sourceMappingURL=style.css.map */
